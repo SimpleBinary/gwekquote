@@ -1,2 +1,3 @@
-# gwekquote
-The random quote generator
+# GwekQuote
+
+The random quote generator.
