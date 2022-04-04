@@ -9,7 +9,7 @@ function calculateStreak(dates) {
                 localStorage.setItem("gwekquotes-max-streak", streak.toString());
             }
 
-            break;
+            return streak;
         }
     }
 }
@@ -35,7 +35,7 @@ let number = JSON.parse(localStorage.getItem("gwekquotes")).length;
 let dates = JSON.parse(localStorage.getItem("gwekquotes-dates")).reverse();
 let currentStreak = calculateStreak(dates);
 let maxStreak = localStorage.getItem("gwekquotes-max-streak");
-let opened = localStorage.getItem("opened");
+let opened = localStorage.getItem("gwekquotes-opened");
 
 document.getElementsByClassName("number")[0].textContent = `Quotes Viewed: ${number}`;
 document.getElementsByClassName("streak")[0].textContent = `Current Streak: ${currentStreak}`;
