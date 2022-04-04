@@ -5,4 +5,4 @@ if (!localStorage.hasOwnProperty("gwekquotes")) {
 let number = JSON.parse(localStorage.getItem("gwekquotes")).length;
 let total = quotes.length;
 
-document.getElementsByClassName("percentage")[0].textContent = `${(number / total * 100).toFixed(2)}%`;
+document.getElementsByClassName("percentage")[0].textContent = `Quotes Viewed: ${(number / total * 100).toFixed(2)}%`;
