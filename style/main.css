@@ -80,6 +80,10 @@ body {
     font-style: italic;
 }
 
+ul {
+    list-style-type: none;
+}
+
 @media screen and (max-width: 544px) {
     .heading {
         display: none;
