@@ -30,7 +30,7 @@ function generateStats(quote) {
 
     let myQuotes = JSON.parse(localStorage.getItem("gwekquotes"));
     let dates = JSON.parse(localStorage.getItem("gwekquotes-dates"));
-    let opened = JparseInt(localStorage.getItem("gwekquotes-opened")) + 1;
+    let opened = parseInt(localStorage.getItem("gwekquotes-opened")) + 1;
 
     if (!myQuotes.includes(quote)) {
         myQuotes.push(quote);
