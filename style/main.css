@@ -79,3 +79,9 @@ body {
 .nav .active {
     font-style: italic;
 }
+
+@media screen and (max-width: 544px) {
+    .heading {
+        display: none;
+    }
+}
