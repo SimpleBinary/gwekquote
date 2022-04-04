@@ -22,7 +22,9 @@ function saveQuote(quote) {
 
     let myQuotes = JSON.parse(localStorage.getItem("gwekquotes"));
 
-    myQuotes.push(quote);
+    if (!myQuotes.includes(quote)) {
+        myQuotes.push(quote);
+    }
 
     localStorage.setItem("gwekquotes", JSON.stringify(myQuotes));
 }

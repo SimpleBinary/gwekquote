@@ -83,5 +83,9 @@ let quotes = [
     "Think, but not too much!",
     "Please, please, please, I'm begging you!",
     "Duncan, can we stop the laughing please?",
-    "Reveision test."
+    "Reveision test.",
+    "1, 2, ... 4, 5, 6",
+    "Left? Left?! Ah, let's vote!",
+    "A snooka ball",
+    "Come, I want to discuss some nonsense with you!"
 ]
