@@ -22,7 +22,7 @@
     <!-- Script -->
     <script defer src="./script/theme.js"></script>
     <script defer>
-        document.getElementById(localStorage.getItem("gwekquotes-thewme")).setAttribute("selected", "selected");
+        document.getElementById(localStorage.getItem("gwekquotes-theme")).setAttribute("selected", "selected");
 
         document.getElementById("theme-chooser").addEventListener("change", (event) => {
             localStorage.setItem("gwekquotes-theme", event.target.value);
