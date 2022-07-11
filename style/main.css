@@ -2,7 +2,6 @@
     box-sizing: border-box;
     font-family: "Playfair Display", "Times", "Times New Roman", serif;
     font-weight: 400;
-    color: #000000;
 }
 
 .theme-dark {
@@ -11,6 +10,7 @@
 }
 
 .theme-dark .nav a {
+    color: #ffffff;
     border-right: 1px #ffffff solid;
 }
 
@@ -116,6 +116,7 @@ select {
     }
     
     .theme-system .nav a {
+        color: #ffffff;
         border-right: 1px #ffffff solid;
     }
 }
