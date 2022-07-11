@@ -21,12 +21,13 @@
 
     <!-- Script -->
     <script defer src="./script/theme.js"></script>
-    <script defer>
-        document.getElementById(localStorage.getItem("gwekquotes-theme")).setAttribute("selected", "selected");
+    <script>
+        document.getElementById(`${localStorage.getItem("gwekquotes-theme")}`).setAttribute("selected", "selected");
 
-        document.getElementById("theme-chooser").addEventListener("change", (event) => {
+        function updateTheme(event) {
+            console.log(event.target.value)
             localStorage.setItem("gwekquotes-theme", event.target.value);
-        });
+        }
     </script>
 </head>
 <body>
@@ -41,11 +42,11 @@
     <div class="main">
         <label for="theme-chooser">Theme:&nbsp;</label>
 
-        <select name="theme-chooser" id="theme-chooser">
+        <select name="theme-chooser" id="theme-chooser" onchange="updateTheme(event)">
             <option id="system" value="system">System</option>
             <option id="light" value="light">Light</option>
             <option id="dark" value="dark">Dark</option>
-          </select>
+        </select>
     </div>
 </body>
 </html>
