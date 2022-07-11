@@ -18,6 +18,16 @@
     <link rel="apple-touch-startup-image" href="favicon.png">
     <meta name="apple-mobile-web-app-title" content="GwekQuote">
     <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Script -->
+    <script defer src="./script/theme.js"></script>
+    <script defer>
+        document.getElementById(localStorage.getItem("gwekquotes-thewme")).setAttribute("selected", "selected");
+
+        document.getElementById("theme-chooser").addEventListener("change", e => {
+            localStorage.setItem("gwekquotes-theme", e.target.value);
+        });
+    </script>
 </head>
 <body>
     <div class="header">
@@ -29,7 +39,13 @@
         </div>
     </div>
     <div class="main">
-        <h1>Coming Soon...</h1>
+        <label for="theme-chooser">Theme:&nbsp;</label>
+
+        <select name="theme-chooser" id="theme-chooser">
+            <option id="system" value="system">System</option>
+            <option id="light" value="light">Light</option>
+            <option id="dark" value="dark">Dark</option>
+          </select>
     </div>
 </body>
 </html>

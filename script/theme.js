@@ -1,0 +1,1 @@
+document.getElementsByTagName("body")[0].classList.add(`theme-${localStorage.getItem("gwekquotes-theme")}`);

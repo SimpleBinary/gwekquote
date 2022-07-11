@@ -28,6 +28,10 @@ function generateStats(quote) {
         localStorage.setItem("gwekquotes-opened", "0");
     }
 
+    if (!localStorage.hasOwnProperty("gwekquotes-theme")) {
+        localStorage.setItem("gwekquotes-theme", e.target.value);
+    }
+
     let myQuotes = JSON.parse(localStorage.getItem("gwekquotes"));
     let dates = JSON.parse(localStorage.getItem("gwekquotes-dates"));
     let opened = parseInt(localStorage.getItem("gwekquotes-opened")) + 1;
