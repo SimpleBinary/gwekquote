@@ -29,7 +29,7 @@ function generateStats(quote) {
     }
 
     if (!localStorage.hasOwnProperty("gwekquotes-theme")) {
-        localStorage.setItem("gwekquotes-theme", e.target.value);
+        localStorage.setItem("gwekquotes-theme", "system");
     }
 
     let myQuotes = JSON.parse(localStorage.getItem("gwekquotes"));

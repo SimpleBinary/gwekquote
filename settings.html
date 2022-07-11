@@ -24,8 +24,8 @@
     <script defer>
         document.getElementById(localStorage.getItem("gwekquotes-thewme")).setAttribute("selected", "selected");
 
-        document.getElementById("theme-chooser").addEventListener("change", e => {
-            localStorage.setItem("gwekquotes-theme", e.target.value);
+        document.getElementById("theme-chooser").addEventListener("change", (event) => {
+            localStorage.setItem("gwekquotes-theme", event.target.value);
         });
     </script>
 </head>
