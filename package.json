@@ -4,13 +4,12 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "rm -rf build && vite build && touch ./build/.nojekyll",
-    	"deploy": "npm run build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-static": "^1.0.0-next.35",
 		"@sveltejs/kit": "next",
 		"svelte": "^3.46.0",
 		"vite": "^2.9.13"
@@ -18,7 +17,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
-		"@sveltejs/adapter-static": "^1.0.0-next.35",
+		
 		"cookie": "^0.4.1"
 	}
 }
