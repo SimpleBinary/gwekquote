@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GwekQuote</title>
+	
+		<!-- Scripts -->
+		<script src="./script/quotes.js"></script>
+		<script defer src="./script/main.js"></script>
+		<script defer src="./script/theme.js"></script>
+	
+		<!-- Styles -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+		<link rel="icon" href="favicon.png" type="image/png">
+	
+		<!-- Apple -->
+		<link rel="apple-touch-icon" href="favicon.png">
+		<link rel="apple-touch-startup-image" href="favicon.png">
+		<meta name="apple-mobile-web-app-title" content="GwekQuote">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-6a4a3d31.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/Quote-80b2fe14.css">
+	<link rel="modulepreload" href="/_app/immutable/start-56579d5c.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-65a9fdf6.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-9b547c84.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-3fdaadf3.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/theme-e33af09b.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Quote-531db89b.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/statistics-2c230e35.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/settings.svelte-39ccb7ab.js">
+	</head>
+	<body>
+		<div>
+
+
+<main class="theme-system svelte-xoefi8"><div class="header svelte-1sln4t8"><h1 class="heading svelte-1sln4t8"><b class="svelte-1sln4t8">Gwek</b>Quote</h1>
+    <div class="nav svelte-1sln4t8"><a class="first svelte-1sln4t8" href="/">Home</a>
+        <a href="/statistics" sveltekit:prefetch class="svelte-1sln4t8">Statistics</a>
+		<a href="/saved" sveltekit:prefetch class="svelte-1sln4t8">Saved</a>
+        <a class="last svelte-1sln4t8 active" href="/settings" sveltekit:prefetch>Settings</a></div>
+</div>
+	<div class="main"><label for="theme-chooser">Theme: </label>
+    <select name="theme-chooser" id="theme-chooser"><option id="system" value="system">System</option><option id="light" value="light">Light</option><option id="dark" value="dark">Dark</option></select></div>
+</main>
+
+
+		<script type="module" data-sveltekit-hydrate="nszr1k">
+		import { start } from "/_app/immutable/start-56579d5c.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="nszr1k"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 4],
+				params: {},
+				routeId: "settings"
+			}
+		});
+	</script></div>
+	</body>
+</html>
