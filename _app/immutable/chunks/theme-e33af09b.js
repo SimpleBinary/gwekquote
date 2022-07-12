@@ -1,0 +1,1 @@
+import{w as o}from"./index-9b547c84.js";const s="system";var e;const a=(e=window.localStorage.getItem("gwekquotes-theme"))!=null?e:s,l=o(a);l.subscribe(t=>{window.localStorage.setItem("gwekquotes-theme",t)});export{l as t};
