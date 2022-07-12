@@ -18,6 +18,7 @@
 	.quotation {
 		margin-right: 0.5em;
 		color: #ff004c;
+        font-style: normal !important;
 	}
 
 	.quotation-right {

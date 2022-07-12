@@ -28,6 +28,7 @@
 <style>
 	.quotation {
 		margin-right: 0.5em;
+		font-style: normal !important;
 		color: #ff004c;
 	}
 

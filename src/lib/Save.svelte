@@ -22,6 +22,7 @@
 
 <style>
     h1 {
+        padding: 1em;
         opacity: 50%;
         font-size: 2em;
         -webkit-touch-callout: none;
