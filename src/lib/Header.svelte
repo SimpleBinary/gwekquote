@@ -1,8 +1,9 @@
 <script>
 	import { page } from '$app/stores';
+	export let theme;
 </script>
 
-<div class="header">
+<div class="header theme-{theme}">
     <h1 class="heading"><b>Gwek</b>Quote</h1>
     <div class="nav">
         <a class:active={$page.url.pathname === '/'} class="first" href="/">Home</a>
@@ -29,7 +30,7 @@
 	}
 
 	.heading b {
-		color: #ff004c;
+		color: #dea60b;
 		font-weight: 500;
 	}
 
@@ -51,5 +52,17 @@
 
 	.nav .active {
 		font-style: italic;
+	}
+
+	.theme-dark {
+		background-color: #0d1117;
+		color: #ffffff;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.theme-system {
+			background-color: #0d1117;
+			color: #ffffff;
+		}
 	}
 </style>

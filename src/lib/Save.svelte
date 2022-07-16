@@ -40,6 +40,6 @@
 
     .liked {
         opacity: 100%;
-        color: #ff004c;
+        color: #dea60b;
     }
 </style>

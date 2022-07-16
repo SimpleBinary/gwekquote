@@ -21,11 +21,15 @@
 </script>
 
 
+<body class="theme-{$theme}">
+	<div>
+		<main>
+			<Header theme={$theme} />
+			<slot />
+		</main>
+	</div>
+</body>
 
-<main class="theme-{$theme}">
-	<Header />
-	<slot />
-</main>
 
 <style>
 	main {
@@ -33,6 +37,11 @@
 		height: 100vh;
 		padding: 0;
 		margin: 0;
+	}
+
+	body {
+		background-color: #ffffff;
+		color: #0d1117;
 	}
 
 	.theme-dark {
