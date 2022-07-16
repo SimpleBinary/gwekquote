@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-03dee272.js",
+    "file": "immutable/start-f0c0a639.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -17,19 +17,19 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "immutable/pages/__layout.svelte-2301db7c.js",
+    "file": "immutable/pages/__layout.svelte-893cb3ee.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-65a9fdf6.js",
       "_theme-e33af09b.js",
-      "_Quote-c88cf567.js",
+      "_Quote-e8bd47d2.js",
       "_statistics-2c230e35.js",
       "_index-9b547c84.js"
     ],
     "css": [
-      "immutable/assets/pages/__layout.svelte-6a4a3d31.css"
+      "immutable/assets/pages/__layout.svelte-2d9bfcd2.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -42,22 +42,22 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "immutable/pages/index.svelte-ab870262.js",
+    "file": "immutable/pages/index.svelte-a4b08455.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-65a9fdf6.js",
-      "_Quote-c88cf567.js",
+      "_Quote-e8bd47d2.js",
       "_saved-30ed38a2.js",
       "_index-9b547c84.js"
     ],
     "css": [
-      "immutable/assets/pages/index.svelte-9c421a1e.css"
+      "immutable/assets/pages/index.svelte-75dda29d.css"
     ]
   },
   "src/routes/saved.svelte": {
-    "file": "immutable/pages/saved.svelte-34dfb55a.js",
+    "file": "immutable/pages/saved.svelte-6041ac13.js",
     "src": "src/routes/saved.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -67,7 +67,7 @@
       "_index-9b547c84.js"
     ],
     "css": [
-      "immutable/assets/pages/saved.svelte-b1afbfb2.css"
+      "immutable/assets/pages/saved.svelte-e728311c.css"
     ]
   },
   "src/routes/settings.svelte": {
@@ -107,13 +107,13 @@
       "_index-9b547c84.js"
     ]
   },
-  "_Quote-c88cf567.js": {
-    "file": "immutable/chunks/Quote-c88cf567.js",
+  "_Quote-e8bd47d2.js": {
+    "file": "immutable/chunks/Quote-e8bd47d2.js",
     "imports": [
       "_index-65a9fdf6.js"
     ],
     "css": [
-      "immutable/assets/Quote-4dc331cc.css"
+      "immutable/assets/Quote-7a748f20.css"
     ]
   },
   "_statistics-2c230e35.js": {
