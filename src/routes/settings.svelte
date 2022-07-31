@@ -21,9 +21,7 @@
                 <option id="dark" value="dark">Dark</option>
             </select>
         </div>
-        <div class="section">
-            <ColorPicker bind:hex label="Accent Colour:"  components={{...CircleVariant, input: CustomInput}} />
-        </div>
+        <ColorPicker bind:hex label="Accent Colour:"  components={{...CircleVariant, input: CustomInput}} />
     </div>
 </div>
 
@@ -31,5 +29,6 @@
     .section {
         margin-top: 1em;
         margin-bottom: 1em;
+        padding: 4px;
     }
 </style>
