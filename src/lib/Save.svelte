@@ -1,5 +1,6 @@
 <script>
-    import quotes from "$lib/stores/saved.js";
+    import quotes from "$lib/stores/saved";
+    import accent from "$lib/stores/accent";
     import { generateQuote } from "$lib/Quote.svelte";
 
     let savedQuotes = $quotes;
@@ -18,7 +19,7 @@
     $: savedQuotes, quotes.set(savedQuotes);
 </script>
 
-<h1 class:liked={liked} on:click="{update}" class="material-symbols-rounded">star</h1>
+<h1 class:liked={liked} style="--accent: {$accent}" on:click="{update}" class="material-symbols-rounded">star</h1>
 
 <style>
     h1 {
@@ -40,6 +41,6 @@
 
     .liked {
         opacity: 100%;
-        color: #dea60b;
+        color: var(--accent);
     }
 </style>

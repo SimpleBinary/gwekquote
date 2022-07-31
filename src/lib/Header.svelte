@@ -1,10 +1,11 @@
 <script>
 	import { page } from '$app/stores';
 	export let theme;
+	import accent from "$lib/stores/accent";
 </script>
 
 <div class="header theme-{theme}">
-    <h1 class="heading"><b>Gwek</b>Quote</h1>
+    <h1 class="heading"><b style="color: {$accent}">Gwek</b>Quote</h1>
     <div class="nav">
         <a class:active={$page.url.pathname === '/'} class="first" href="/">Home</a>
         <a class:active={$page.url.pathname === '/statistics'} href="/statistics" sveltekit:prefetch>Statistics</a>
@@ -30,7 +31,6 @@
 	}
 
 	.heading b {
-		color: #dea60b;
 		font-weight: 500;
 	}
 

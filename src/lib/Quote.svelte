@@ -1,3 +1,7 @@
+<script>
+	import accent from "$lib/stores/accent";
+</script>
+
 <script context="module">
 	import quotes from "$lib/quotes.json"
 
@@ -21,15 +25,14 @@
 	let content = generateQuote();
 </script>
 
-<h1 class="quotation">❝</h1>
+<h1 class="quotation" style="color: {$accent}">❝</h1>
 <h1>{content}</h1>
-<h1 class="quotation quotation-right">❞</h1>
+<h1 class="quotation quotation-right" style="color: {$accent}">❞</h1>
 
 <style>
 	.quotation {
 		margin-right: 0.5em;
 		font-style: normal !important;
-		color: #dea60b;
 	}
 
 	.quotation-right {

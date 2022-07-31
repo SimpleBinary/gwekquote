@@ -6,7 +6,7 @@
     $: currentStats, statistics.set(currentStats);
 
     function updateMaxStreak() {
-        currentStats.maxStreak += 1
+        currentStats.maxStreak = 1
     }
 
     function calculateStreak(dates) {
@@ -31,7 +31,7 @@
 <div class="main">
     <ul>
         <li><h2>Quotes Viewed: { currentStats.list.length }</h2></li>
-        <li><h2>Current Streak: { calculateStreak(currentStats.timeStamps) }</h2></li>
+        <li><h2>Current Streak: { calculateStreak(currentStats.timeStamps.reverse()) }</h2></li>
         <li><h2>Max Streak: { currentStats.maxStreak }</h2></li>
         <li><h2>Times Opened: { currentStats.timesOpened }</h2></li>
     </ul> 

@@ -1,12 +1,13 @@
 <script>
-    import quotes from "$lib/stores/saved.js";
+    import quotes from "$lib/stores/saved";
+    import accent from "$lib/stores/accent"
 </script>
 
 <div class="content">
     <div>
         {#each $quotes as quote}
             <div class="quote">
-                <h1><span class="quotation">❝</span>{quote}<span class="quotation quotation-right">❞</span></h1>
+                <h1><span class="quotation" style="color: {$accent}">❝</span>{quote}<span class="quotation quotation-right" style="color: {$accent}">❞</span></h1>
             </div>
         {/each} 
     </div>
@@ -17,7 +18,6 @@
 <style>
 	.quotation {
 		margin-right: 0.5em;
-		color: #dea60b;
         font-style: normal !important;
 	}
 
@@ -40,6 +40,7 @@
     }
 
     .quote {
-        margin-top: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 </style>
