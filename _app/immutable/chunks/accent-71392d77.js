@@ -1,0 +1,1 @@
+import{w as a}from"./index-4ceb3503.js";const o="#dea60b";var e;const c=(e=window.localStorage.getItem("gwekquotes-accent"))!=null?e:o,s=a(c);s.subscribe(t=>{window.localStorage.setItem("gwekquotes-accent",t)});export{s as a};

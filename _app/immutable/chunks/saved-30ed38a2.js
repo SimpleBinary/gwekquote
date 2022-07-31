@@ -1,1 +1,0 @@
-import{w as o}from"./index-9b547c84.js";const s=[];var e;const a=(e=JSON.parse(window.localStorage.getItem("gwekquotes-saved")))!=null?e:s,i=o(a);i.subscribe(t=>{window.localStorage.setItem("gwekquotes-saved",JSON.stringify(t))});export{i as q};
